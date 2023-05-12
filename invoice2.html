@@ -177,8 +177,8 @@ document.getElementById('invoice-form').addEventListener('submit', function (eve
     const customer = document.getElementById('customer').value;
     const items = Array.from(document.querySelectorAll('#items tbody tr')).map(item => {
         return {
-            product: item.querySelector('.product').value,
-            description: item.querySelector('.item-desc').value,
+            product: item.querySelector('.item-product').value,
+            description: item.querySelector('.item-description').value,
             quantity: parseInt(item.querySelector('.item-qty').value, 10),
             unitPrice: parseFloat(item.querySelector('.item-unit-price').value),
             taxRate: parseFloat(item.querySelector('.item-tax-rate').value),
