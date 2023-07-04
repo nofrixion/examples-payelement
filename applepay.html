@@ -16,7 +16,12 @@
           #apple-pay-button {
               width: 90%; /* Limits the width to 90% of the container width on small screens */
           }
-      }
+      }apple-pay-button {
+      --apple-pay-button-width: 300px;
+      --apple-pay-button-height: 60px;
+      --apple-pay-button-border-radius: 5px;
+      --apple-pay-button-padding: 5px 0px;
+    }
     </style>
 
     <!-- 👇🏻 Add NoFrixion JavaScript library  -->
@@ -30,7 +35,7 @@
     <div id="apple-pay-button-container">
 
       <nofrixion-apple-pay-button 
-          paymentRequestID="f37803c6-cf52-4437-b5dc-7a83b9bb6b5d" 
+          paymentRequestID="34e3e724-ed0c-460c-9d9e-eddcc4b89fe0" 
           apiUrl="https://api-dev.nofrixion.com/api/v1" 
           id="apple-pay-button" 
           style="width: 350px">
