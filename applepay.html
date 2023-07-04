@@ -2,6 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
+
+    <style>
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+      }
+      #apple-pay-button {
+          width: 300px; /* Adjust the size as needed */
+          height: 50px; /* Adjust the size as needed */
+      }
+  </style>
+
     <!-- 👇🏻 Add NoFrixion JavaScript library  -->
     <script src="https://cdn.nofrixion.com/nofrixion-nextgen.js"></script>
 
@@ -11,7 +26,7 @@
     <h3>Apple Pay Button should be here on iOS and MacOS:</h3>
 
     <!-- 👇🏻 Use the WebComponent where the Apple Pay button  will be injected -->
-    <nofrixion-apple-pay-button paymentRequestID="e4d62bf1-0f4a-45f0-8b57-34988c220ba7" apiUrl="https://api.nofrixion.com/api/v1">
+    <nofrixion-apple-pay-button paymentRequestID="0550c467-e2ee-4ad3-97b6-7571cd4c2f93" apiUrl="https://api-dev.nofrixion.com/api/v1" id="apple-pay-button">
 
     </nofrixion-apple-pay-button>
 
